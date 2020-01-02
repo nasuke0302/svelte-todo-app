@@ -1,4 +1,6 @@
 <script>
+  import { _ } from "svelte-i18n";
+
   import Navbar from "../components/Navbar.svelte";
   import ToDoList from "../components/ToDoList.svelte";
   import ToDoAdd from "../components/ToDoAdd.svelte";
@@ -12,7 +14,7 @@
   const addToDo = ({ detail }) => {
     let newTodo = todos.find(todo => todo === detail.todo);
     if (newTodo) {
-      alert("Already exists");
+      alert($_("pages.home.alreadyExists"));
       return;
     }
     todos = [...todos, detail.todo];
@@ -26,10 +28,6 @@
     updateToDosStore();
   };
 </script>
-
-<style>
-
-</style>
 
 <Navbar />
 <ToDoAdd on:addToDo={addToDo} />

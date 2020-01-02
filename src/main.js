@@ -1,5 +1,5 @@
 import App from './App.svelte';
-
+import './localization/i18n';
 const app = new App({
     target: document.body,
     props: {

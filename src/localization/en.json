@@ -1,0 +1,15 @@
+{
+    "page": {
+        "home": {
+            "alreadyExists": "Already Exists"
+        }
+    },
+    "placeholders": {
+        "newTodo": "What's pending"
+    },
+    "buttons": {
+        "texts": {
+            "newTodo": "Add"
+        }
+    }
+}

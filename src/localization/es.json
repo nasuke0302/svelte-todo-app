@@ -1,0 +1,15 @@
+{
+    "page": {
+        "home": {
+            "alreadyExists": "Ya Existe"
+        }
+    },
+    "placeholders": {
+        "newTodo": "Que hay pendiente?"
+    },
+    "buttons": {
+        "texts": {
+            "newTodo": "Nuevo"
+        }
+    }
+}

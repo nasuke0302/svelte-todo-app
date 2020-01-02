@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import { _ } from "svelte-i18n";
 
   let dispatch = createEventDispatcher();
   let newTodo = "";
@@ -76,7 +77,7 @@
 
 <form on:submit|preventDefault={handleSubmit}>
   <div>
-    <input type="text" bind:value={newTodo} placeholder="What's pending?" />
-    <button type="submit">Add</button>
+    <input type="text" bind:value={newTodo} placeholder={$_('placeholders.newTodo')} />
+    <button type="submit">{$_('buttons.texts.newTodo')}</button>
   </div>
 </form>
